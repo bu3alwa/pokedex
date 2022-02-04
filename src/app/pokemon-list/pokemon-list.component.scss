@@ -1,0 +1,79 @@
+.container{
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+    @apply h-full;
+    @apply bg-gray-600;
+}
+
+.title-bar{
+    @apply sticky;
+    @apply top-0;
+    @apply z-50;
+    @apply w-full;
+    @apply bg-cyan-700;
+    @apply h-16
+}
+
+.h1 {
+    @apply text-2xl;
+    @apply text-white;
+    @apply font-bold;
+    @apply p-1;
+    @apply justify-center;
+    @apply text-center;
+}
+
+.poke-name {
+    @apply capitalize;
+    @apply text-xl;
+    @apply text-cyan-700;
+    @apply mb-2;
+    @apply font-bold;
+}
+
+.content-container {
+    @apply flex;
+    @apply flex-col;
+    @apply justify-center;
+    @apply items-center;
+}
+
+.card {
+    @apply mt-5;
+    @apply bg-white;
+    @apply rounded;
+    @apply shadow-md;
+    @apply justify-center;
+    @apply items-center;
+}
+.inner-card {
+    @apply flex;
+    @apply flex-row;
+    @apply justify-center;
+    @apply items-center;
+    @apply p-5;
+}
+
+.image-container {
+    @apply mx-5;
+    @apply border-2;
+    @apply rounded-full;
+    @apply bg-gray-800;
+    @apply border-opacity-0;
+}
+.info-container {
+    @apply mx-10
+}
+.image-container > img {
+    @apply h-32;
+    @apply w-32;
+    @apply m-3;
+    @apply object-cover;
+    @apply rounded-full;
+}
+
+.poke-type {
+    @apply capitalize;
+}

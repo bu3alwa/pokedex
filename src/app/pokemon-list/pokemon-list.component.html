@@ -1,0 +1,36 @@
+<div class="container">
+<div class="title-bar">
+  <h1 class="h1">Pokémon List</h1>
+</div>
+
+<div class="content-container">
+    <ul class="pokemons">
+        <li *ngFor="let pokemon of pokemons">
+            <div id="{{ pokemon.order }}" class="card" >
+                <div class="inner-card">
+                    <div class="image-container">
+                        <img src="{{ pokemon.sprites.front_default }}" alt="{{ pokemon.name }}">
+                    </div>
+                    <div class="info-container">
+                        <h2 class="poke-name">{{ pokemon.name }}</h2>
+                        <ul>
+                            <li><p><b>Weight: </b><a>{{pokemon.weight}}</a></p></li>
+                            <li><p><b>Height: </b><a>{{pokemon.weight}}</a></p></li>
+                            <li><p><b>Base Experience: </b> <a>{{pokemon.base_experience}}</a></p></li>
+                            <li>
+                            <p><b>Type: </b>
+                                <a *ngFor="let type of pokemon.types; last as isLast" class="poke-type">
+                                    <a *ngIf="isLast">{{ type.type.name }}</a>
+                                    <a *ngIf="!isLast">{{ type.type.name }}, </a>
+                                    <a></a>
+                                </a>
+                            </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
